@@ -7,6 +7,7 @@
   - https://github.com/jalapeno-business/carousel
   - https://github.com/jalapeno-business/navbar
   - https://github.com/jalapeno-business/rec-public
+  - https://github.com/jalapeno-business/restaurant-info
 
 ## Table of Contents
 
