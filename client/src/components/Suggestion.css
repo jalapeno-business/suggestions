@@ -1,0 +1,14 @@
+.suggestion-template {
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  grid-template-areas: "photo info";
+}
+
+.suggestion-photo {
+  grid-area: photo;
+}
+
+.suggestion-info {
+  grid-area: info;
+  background-color: white;
+}

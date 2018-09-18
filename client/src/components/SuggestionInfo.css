@@ -1,0 +1,61 @@
+.suggestion-info {
+  display: flex;
+  align-items: center;
+  padding: 1.5em;
+}
+
+.suggestion-categories {
+  display: flex;
+  flex-direction: row;
+  color: #656666;
+}
+
+
+.suggestion-rating {
+  display: flex;
+  flex-direction: row;
+}
+
+.suggestion-name {
+  font-size: 22px;
+  color: #101820;
+  border-bottom: 1px solid #b70038;
+  transition: border-bottom .2s ease-in-out;
+}
+
+.zagat-logo {
+  height: 20px;
+  border-radius: 100%;
+  margin-right: 7px; 
+}
+
+.zagat-review-text {
+  font-size: .9em;
+  padding: .2em;
+  padding-right: .7em;
+  border-right: 1px solid #d0d2d3;
+}
+
+.google-logo {
+  height: 20px;
+  padding-left: .7em;
+}
+
+.google-text {
+  font-size: .9em;
+  padding: .2em;
+}
+
+.stars {
+  height: 8px;
+  padding-left: .4em;
+}
+
+#suggestion-info div {
+  margin: .2em 0em;
+}
+
+.underline {
+  border-bottom: 1px solid transparent;
+  transition: border-bottom .2s ease-in-out;
+}
