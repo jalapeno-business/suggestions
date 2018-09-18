@@ -1,4 +1,5 @@
 const express = require('express');
+const cors = require('cors');
 
 const app = express();
 const parser = require('body-parser');
@@ -6,7 +7,7 @@ const db = require('./db');
 
 app.use(express.static(`${__dirname}/../client/dist`));
 
-app.use(parser.json());
+app.use(parser.json(), cors());
 
 
 app.get('/restaurant/:id/info', (req, res) => {
