@@ -1,9 +1,13 @@
-.Suggestions-Container {
+#Suggestions-Container {
   border-top: 1px solid black;
+}
+#Suggestions-header span {
+  margin: 0px 2px;
+  font-size: 20px
 }
 
 @media (min-width: 300px) {
-  .Suggestions {
+  #Suggestions {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr;
@@ -13,7 +17,7 @@
 }
 
 @media (min-width: 900px) {
-  .Suggestions {
+  #Suggestions {
     display: grid;
     grid-gap: 2em;
     grid-template-columns: 1fr 1fr;

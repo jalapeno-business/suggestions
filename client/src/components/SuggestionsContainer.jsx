@@ -18,7 +18,7 @@ export default class SuggestionsContainer extends React.Component {
   }
 
   getSuggestions(id) {
-    axios.get(`http://localhost:1170/restaurant/${id}/suggestions`)
+    axios.get(`/api/restaurant/suggestions/${id}`)
       .then((response) => {
         this.setState({
           suggestions: response.data,
@@ -30,14 +30,14 @@ export default class SuggestionsContainer extends React.Component {
     const { cuisine, name } = this.props;
     const { suggestions } = this.state;
     return (
-      <div className="Suggestions-Container">
-        <div>
-        More
-          {cuisine}
-        Near
-          {name}
+      <div id="Suggestions-Container">
+        <div id="Suggestions-header">
+          <span>More</span>
+          <span>{cuisine}</span>
+          <span>Near</span>
+          <span>{name}</span>
         </div>
-        <div className="Suggestions">
+        <div id="Suggestions">
           {suggestions.map(
             restaurant => <Suggestion key={restaurant.id} restaurant={restaurant} />,
           )}
