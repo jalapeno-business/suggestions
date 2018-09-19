@@ -39,15 +39,15 @@ export default class SuggestionInfo extends React.Component {
       margin: '0 3px',
     };
     const suggestionName = isHovered
-      ? 'suggestion-name'
-      : 'suggestion-name underline';
+      ? 'suggestion-name suggestion-info-line'
+      : 'suggestion-name suggestion-info-line underline';
 
     return (
       <div id="suggestion-info">
         <span className={suggestionName}>
           {restaurant.businessInfo.name}
         </span>
-        <div className="suggestion-categories">
+        <div className="suggestion-categories suggestion-info-line">
           <span>{restaurant.details.cuisine}</span>
           <span style={spacerMargin}> · </span>
           <span>{restaurant.businessInfo.location.neighborhood}</span>
@@ -56,7 +56,7 @@ export default class SuggestionInfo extends React.Component {
             {tempArray.map(() => <span key={Math.floor(Math.random() * 100)}>$</span>)}
           </div>
         </div>
-        <div className="suggestion-rating">
+        <div className="suggestion-rating suggestion-info-line">
           <img className="zagat-logo" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/zagat_icon.png'} alt="zagat-logo" />
           <div className="zagat-review-text">
             <span>FOOD </span>
@@ -68,7 +68,7 @@ export default class SuggestionInfo extends React.Component {
             <img className="stars" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/stars.jpg'} alt="5stars" />
           </div>
         </div>
-        <div>
+        <div className="suggestion-info-line">
           {restaurant.businessInfo.tag}
         </div>
       </div>

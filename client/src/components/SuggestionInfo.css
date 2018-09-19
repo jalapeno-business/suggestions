@@ -10,6 +10,10 @@
   color: #656666;
 }
 
+.suggestion-categories div {
+  margin-top: .0em;
+}
+
 
 .suggestion-rating {
   display: flex;
@@ -51,7 +55,7 @@
   padding-left: .4em;
 }
 
-#suggestion-info div {
+.suggestion-info-line {
   margin: .2em 0em;
 }
 
