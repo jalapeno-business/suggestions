@@ -19,7 +19,7 @@ class App extends React.Component {
   }
 
   getBusinessInfo(id) {
-    axios.get(`http://localhost:1170/restaurant/${id}/info`)
+    axios.get(`/api/restaurant/info/${id}`)
       .then((response) => {
         this.setState({
           restaurant: response.data,
@@ -46,5 +46,5 @@ class App extends React.Component {
   }
 }
 
-// ReactDOM.render(<App />, document.getElementById('app'));
-window.Suggestions = App;
+ReactDOM.render(<App />, document.getElementById('app'));
+// window.Suggestions = App;
