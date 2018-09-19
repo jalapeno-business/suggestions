@@ -10,7 +10,7 @@ app.use(express.static(`${__dirname}/../client/dist`));
 app.use(parser.json(), cors());
 
 
-app.get('/restaurant/:id/info', (req, res) => {
+app.get('/api/restaurant/info/:id', (req, res) => {
   db.getRestaurantById(req.params.id, (error, result) => {
     if (error) {
       throw error;
@@ -21,7 +21,7 @@ app.get('/restaurant/:id/info', (req, res) => {
 });
 
 
-app.get('/restaurant/:id/suggestions', (req, res) => {
+app.get('/api/restaurant/suggestions/:id', (req, res) => {
   db.getRestaurantById(req.params.id, (error, result) => {
     if (error) {
       throw error;
