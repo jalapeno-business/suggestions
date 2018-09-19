@@ -18,7 +18,7 @@ export default class SuggestionsContainer extends React.Component {
   }
 
   getSuggestions(id) {
-    axios.get(`/restaurant/${id}/suggestions`)
+    axios.get(`http://localhost:1170/restaurant/${id}/suggestions`)
       .then((response) => {
         this.setState({
           suggestions: response.data,

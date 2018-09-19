@@ -35,7 +35,7 @@ class App extends React.Component {
       return <div />;
     }
     return (
-      <div className="app">
+      <div>
           <SuggestionsContainer
             cuisine={restaurant.details.cuisine}
             id={restaurant.id}
