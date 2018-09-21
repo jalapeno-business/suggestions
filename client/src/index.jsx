@@ -46,5 +46,5 @@ class App extends React.Component {
   }
 }
 
-// ReactDOM.render(<App />, document.getElementById('app'));
-window.Suggestions = App;
+ReactDOM.render(<App />, document.getElementById('zagat-suggestions'));
+// window.Suggestions = App;
