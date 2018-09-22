@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './SuggestionInfo.css';
-import zagatLogo from './icons/zagat_icon.png';
-import googleLogo from './icons/google.png';
-import stars from './icons/stars.jpg';
 
 export default class SuggestionInfo extends React.Component {
   constructor(props) {
