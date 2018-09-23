@@ -24,6 +24,8 @@
     "css-loader": "^1.0.0",
     "express": "^4.16.3",
     "faker": "^4.1.0",
+    "grunt": "^1.0.3",
+    "grunt-run": "^0.8.1",
     "mongodb": "^3.1.4",
     "mongoose": "^5.2.13",
     "prop-types": "^15.6.2",
