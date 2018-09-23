@@ -1,6 +1,6 @@
 const puppeteer = require('puppeteer');
 
-const pageUrl = 'http://localhost:1177/';
+const pageUrl = 'http://localhost:1170/';
 
 let page;
 let browser;
@@ -27,7 +27,7 @@ describe('Check the divs', () => {
   });
 
   test('assert that a div named container exists', async () => {
-    const suggestions = await page.$eval('.Suggestions-Container', el => (!!el));
+    const suggestions = await page.$eval('#Suggestions-Container', el => (!!el));
     expect(suggestions).toBe(true);
   });
 });

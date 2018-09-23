@@ -12,13 +12,14 @@
     "start": "node server/index.js",
     "start-dev": "nodemon server/index.js",
     "webpack": "webpack -d --watch ",
-    "webpack-prod": "webpack -p --config ./webpack.config.js",
+    "webpack-prod": "webpack --config ./webpack.prod.js",
     "test": "jest"
   },
   "dependencies": {
     "axios": "^0.18.0",
     "babel-jest": "^23.6.0",
     "body-parser": "^1.18.3",
+    "compression-webpack-plugin": "^2.0.0",
     "cors": "^2.8.4",
     "css-loader": "^1.0.0",
     "express": "^4.16.3",
@@ -28,7 +29,8 @@
     "prop-types": "^15.6.2",
     "react": "^16.5.0",
     "react-dom": "^16.5.0",
-    "style-loader": "^0.23.0"
+    "style-loader": "^0.23.0",
+    "webpack-merge": "^4.1.4"
   },
   "devDependencies": {
     "babel-cli": "^6.26.0",
