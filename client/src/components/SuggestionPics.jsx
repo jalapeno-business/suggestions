@@ -39,18 +39,19 @@ export default class SuggestionPics extends React.Component {
     const { photos } = this.props;
     const { currentPic } = this.state;
     const options = {
-      display: 'flex',
-      height: '250px',
+      height: '100%',
+      maxHeight: '250px',
+      minHeight: '150px',
       width: '100%',
-      minWidth: '100px',
+      maxWidth: '250px',
+      minWidth: '150px',
       backgroundSize: 'cover',
       backgroundImage: `url(${photos[currentPic]})`,
-      alignItems: 'center',
-      justifyContent: 'space-between',
     };
 
     return (
       <div>
+        <div style={options}>
         {
           photos.length > 1 && (
             <div className="suggestion-pics" style={options}>
@@ -58,7 +59,8 @@ export default class SuggestionPics extends React.Component {
               <button type="button" className="button" onClick={() => this.handleNextBtn()}>&gt;</button>
             </div>
           )
-        }
+        } 
+        </div>
       </div>
     );
   }
