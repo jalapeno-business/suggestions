@@ -26,8 +26,26 @@ describe('Check the divs', () => {
     await page.goto(pageUrl, { waitUntil: 'networkidle2' });
   });
 
-  test('assert that a div named container exists', async () => {
+  test('assert that a div named zagat-suggestions exists to render to', async () => {
+    const suggestions = await page.$eval('#zagat-suggestions', el => (!!el));
+    expect(suggestions).toBe(true);
+  });
+  test('assert that a div named Suggestions-Container exists', async () => {
     const suggestions = await page.$eval('#Suggestions-Container', el => (!!el));
     expect(suggestions).toBe(true);
   });
+  test('assert that a div named suggestion-photo exists', async () => {
+    const suggestions = await page.$eval('.suggestion-photo', el => (!!el));
+    expect(suggestions).toBe(true);
+  });
+  test('assert that a div named suggestion-info exists', async () => {
+    const suggestions = await page.$eval('.suggestion-info', el => (!!el));
+    expect(suggestions).toBe(true);
+  });
 });
+
+describe('check the buttons', () => {
+  beforeEach(async () => {
+    await page.goto(pageUrl, { waitUntil: 'networkidle2' });
+  });
+})
