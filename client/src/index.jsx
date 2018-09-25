@@ -3,6 +3,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import axios from 'axios';
 import SuggestionsContainer from './components/SuggestionsContainer';
+import "./index.css";
 
 
 class App extends React.Component {
@@ -35,7 +36,7 @@ class App extends React.Component {
       return <div />;
     }
     return (
-      <div>
+      <div id="suggestions-theme">
           <SuggestionsContainer
             cuisine={restaurant.details.cuisine}
             id={restaurant.id}
@@ -46,5 +47,5 @@ class App extends React.Component {
   }
 }
 
-// ReactDOM.render(<App />, document.getElementById('app'));
-window.Suggestions = App;
+ReactDOM.render(<App />, document.getElementById('zagat-suggestions'));
+

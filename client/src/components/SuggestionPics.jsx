@@ -50,13 +50,17 @@ export default class SuggestionPics extends React.Component {
     return (
       <div style={options}>
         {
-          photos.length > 1 && (
+          photos.length > 1 
+          ? (
             <div className="suggestion-pics">
               <button type="button" className="button" onClick={() => this.handlePrevBtn()}>&lt;</button>
               <button type="button" className="button" onClick={() => this.handleNextBtn()}>&gt;</button>
             </div>
           )
-        }
+          : (
+            <div className="suggestion-pics"></div>
+          )
+        } 
       </div>
     );
   }

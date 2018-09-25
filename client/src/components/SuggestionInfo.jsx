@@ -1,9 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './SuggestionInfo.css';
-import zagatLogo from './icons/zagat_icon.png';
-import googleLogo from './icons/google.png';
-import stars from './icons/stars.jpg';
 
 export default class SuggestionInfo extends React.Component {
   constructor(props) {
@@ -57,15 +54,15 @@ export default class SuggestionInfo extends React.Component {
           </div>
         </div>
         <div className="suggestion-rating suggestion-info-line">
-          <img className="zagat-logo" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/zagat_icon.png'} alt="zagat-logo" />
+          <img className="zagat-logo" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/webpImages/zagat_icon.webp'} alt="zagat-logo" />
           <div className="zagat-review-text">
             <span>FOOD </span>
             <span style={{ color: 'red' }}>{restaurant.zagatReview.review}</span>
           </div>
-          <img className="google-logo" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/google.png'} alt="google-logo" />
+          <img className="google-logo" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/webpImages/google.webp'} alt="google-logo" />
           <div className="google-text">
             <span>{avgRating}</span>
-            <img className="stars" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/stars.jpg'} alt="5stars" />
+            <img className="stars" src={'https://s3.us-east-2.amazonaws.com/zagat-fec/webpImages/5stars.webp'} alt="5stars" />
           </div>
         </div>
         <div className="suggestion-info-line">
